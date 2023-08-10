@@ -4,6 +4,8 @@
     --button-accent-color: #596D48;
     --light-border: #E5E7EB;
     --background-offwhite: #f9fafb;
+    --font-dark: #131313;
+    --font-medium: #1f2937;
 }
 
 @font-face {
@@ -20,7 +22,7 @@
 }
 
 html {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .page-container {
@@ -52,8 +54,28 @@ html {
 
 .form-column {
     flex: 2;
+    background-color: var(--background-offwhite);
+}
+
+.top-container {
+    font-size: 1.2rem;
+    color: var(--font-dark);
+    padding: 30px;
+    margin-top: 60px;
 }
 
 .form-column p {
     max-width: 55ch;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    background-color: white;
+    color: var(--font-medium);
+    padding: 30px;
+}
+
+.form-column h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
 }
