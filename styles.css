@@ -1,1 +1,17 @@
 /* Sign-up form stylesheet */
+
+:root {
+    --button-accent-color: #596D48;
+    --light-border: #E5E7EB;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
