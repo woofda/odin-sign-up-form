@@ -3,6 +3,12 @@
 :root {
     --button-accent-color: #596D48;
     --light-border: #E5E7EB;
+    --background-offwhite: #f9fafb;
+}
+
+@font-face {
+    font-family: "Norse-Bold";
+    src: url(Norse-Bold.otf);
 }
 
 *,
@@ -10,8 +16,44 @@
 *::after {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-container {
+    height: 100vh;
+    display: flex;
+}
+
+.pic-column {
+    flex: 1;
+    background: url(img/bikin.jpg) no-repeat;
+    background-size: cover;
+}
+
+.logo-container {
+    color: white;
+    font-family: "Norse-Bold";
+    text-align: center;
+    padding: 0.125em;
+    width: 100%;
+    font-size: 6rem;
+    background-color: rgba(0, 0, 0, 0.637);
+}
+
+/* .logo-container > div::before {
+    content: "asd";
+    background: url(img/odin-lined.png) no-repeat;
+    background-size: contain;
+} */
+
+.form-column {
+    flex: 2;
+}
+
+.form-column p {
+    max-width: 55ch;
 }
