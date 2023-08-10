@@ -6,6 +6,7 @@
     --background-offwhite: #f9fafb;
     --font-dark: #131313;
     --font-medium: #1f2937;
+    --font-light: #505863;
 }
 
 @font-face {
@@ -53,7 +54,7 @@ html {
 } */
 
 .form-column {
-    flex: 2;
+    flex: 1;
     background-color: var(--background-offwhite);
 }
 
@@ -67,12 +68,38 @@ html {
 .form-column p {
     max-width: 55ch;
     margin-bottom: 20px;
+    font-weight: 500;
 }
 
 .form-container {
     background-color: white;
     color: var(--font-medium);
     padding: 30px;
+}
+
+.form-row {
+    display: flex;
+    gap: 60px;
+    margin-top: 20px;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.form-input label {
+    color: var(--font-light);
+    font-size: 0.6rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.form-input input {
+    padding: 5px 8px;
+    border-radius: 3px;
+    border: 1px solid var(--light-border);
 }
 
 .form-column h2 {
