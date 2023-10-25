@@ -38,20 +38,23 @@ html {
 }
 
 .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
     color: white;
     font-family: "Norse-Bold";
-    text-align: center;
-    padding: 0.125em;
-    width: 100%;
     font-size: 6rem;
+    padding: 0.125em 0.5em;
     background-color: rgba(0, 0, 0, 0.637);
+
+    position: relative;
+    top: 20vh;
 }
 
-/* .logo-container > div::before {
-    content: "asd";
-    background: url(img/odin-lined.png) no-repeat;
-    background-size: contain;
-} */
+.logo-container > img {
+    height: 7.5rem;
+}
 
 .form-column {
     flex: 1;
